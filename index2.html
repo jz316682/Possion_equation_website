@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style2.css">
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>my math Webpage</title>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <label class="logo">國立嘉義大學 應用數學系</label>
+                <ul>
+                    <li><a href="#electrostatics2">Electrostatics</a></li>
+                    <li><a href="#Properties_Equations2">Properties of Equations</a></li>
+                    <li><a href="#Mathematical expression2">Mathematical expression</a></li>
+                </ul>
+            </nav>
+            <div class="arc">
+                <h1>泊松方程 (Poisson's equation)</h1>
+            </div>
+            <div class="introdution">
+                <h2>i.Introdution</h2>
+                <p>
+                    泊松方程(Poisson's equation)屬於數學中的偏微分方程式，其常用於靜電學、機械工程及理論物理。是<br>
+                    由法國數學家、幾何學家及物理學家Siméon Denis Poisson而得名的。此方程式運用了很多數學的元<br>
+                    素，如格林函數、Laplace operator或是Dirichlet boundary condition等等。其常用電荷密度來計算電位<br>
+                    以及高斯電荷分佈的電場，是靜電學中相當重要的方程式。其中泊松方程可以看做是不可壓縮的流<br>
+                    體運動方程，方程的意義相當於穿過任意封閉曲面的液體的流量等於曲面內所包含的流體源產生液體<br>
+                    的總量，在靜電場中，電場強度相當於流密度，淨電荷相當於流體源。
+                </p>
+                <img src="Simeon_Poisson.jpg">
+            </div>
+            <p>&nbsp;</p>
+            <div class="Description_equation">
+                <h2>ii.Description of the equation</h2>
+                <p>Poisson's equation的基本形式為:</p><br><br><br>
+                <span style="color:aliceblue; font-size: 20px; display: flex; justify-content: center;">\[\triangle  \varphi =f\]</span>
+                <p style="padding-top:2px ;">其中裡面元素分別代表為:<br><br>
+                \(\triangle\) : Laplace operator  (如在歐幾里得空間的話即可表示成 \(\bigtriangledown  ^{2}\))，也就是對 \(\varphi\)
+                先取梯度(gradient)，再對其結果取散度(Divergence)，即 \(\triangle\) = \(\bigtriangledown  ^{2}\))。<br><br>
+                \(f\) : 其為在流形(歐幾里得空間化的一個拓撲空間)的實數或是複數的方程式。<br><br>
+                \(\varphi\) : 其為在流形(歐幾里得空間化的一個拓撲空間)的實數或是複數的方程式。</p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="Properties_Equations" id="Properties_Equations2">
+                <h2>iii.Properties of Equations</h2>
+                <ol style="list-style-type:circle;">
+                    <li><h3>方程式的轉換:</h3></li><br>
+                    <span style="color:aliceblue; font-size: 20px; display: flex; justify-content: center;">\(\triangle  \varphi = \bigtriangledown  ^{2}  \varphi \)</span>
+                    <li><h3>Three-dimensional coordinate system:</h3><br>
+                    <span style="color:aliceblue; font-size: 20px; display: flex; justify-content: center;">\((\frac{\partial^2}{\partial x^2}    + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}) \phi (x,y,z)=f(x,y,z) \)</span></li>
+                    <li><h3>Laplace equation :</h3><br>
+                    <span style="color:aliceblue; font-size: 20px; display: flex; justify-content: center;">\(\triangle  \varphi = 0 \)</span><br>
+                    <p>Poisson's equation會變成Laplace equation，如果\(f(x,y,z)=0\)，也就是變為一個齊次方程式。</p></li>
+                </ol>
+            </div>
+            <p>&nbsp;</p>
+            <div class="electrostatics" id="electrostatics2">
+                <h2>iv.Electrostatics</h2>
+                <p>當遇到有給定的電荷密度然後需要找出其電位就得需要用到 Poisson's equation，其方程式為:<br><br><br>
+                <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(\triangle  \Phi  =-\frac{  \rho  }{ \varepsilon } \)</span><br>
+                其中 \(\Phi\) 代表的是電位， \(\rho\) 代表的是體電荷密度， 而 \(\varepsilon\) 代表的是真空電容率。<br>
+                且當 \(\rho\) 為 0 時，則 \(\triangle  \Phi  =0\)，即為 Laplace equation 。</p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="mathematical_expression" id="Mathematical expression2">
+                <h2>v.Mathematical expression</h2>
+                <p>當 Poisson's equation 在 Dirichlet boundary condition (稱為常微分方程或偏微分方程的「第一類邊界條件」，指定微分方程的解在邊界處的值)，也就是在:<br><br>
+                    <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(\begin{cases}- \Delta \varphi  =f & in  \Omega \\ \varphi =g & auf   \partial \Omega   \end{cases} \)</span><br>
+                    其中 \(\Omega  \subset  R^{n} \) 是為 open and bounded set。<br>
+                    則此解為:<br><br>
+                    <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(\  \Phi (x) =\begin{cases} \frac{-1}{2 \pi }ln|x|  & n = 2\\ \frac{1}{n(n-2)    \omega _{n} |x|^{n-2} }  & n  \geq  3\end{cases} \)</span><br>
+                    其中 \(\omega _{n} \) 為 n 維歐幾里得空間中單位球面的體積，且再透過泛函分析中的旋積 (convolution) \(( \Phi  \ast f)\) 即可求出\(- \Delta \varphi  =f\) 的解。<br><br>
+                    特別地我們也可以使用格林函數 (Green's function) 來求出解:<br><br>
+                    <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(G(x,y)= \Phi (y-x)-  \phi ^{x} (y)\)</span>
+                    其中 \(\phi ^{x}\) 是為一校正函數，其滿足:<br><br>
+                    <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(\begin{cases}   \triangle  \phi  ^{x}=0  & in  \Omega \\    \phi  ^{x}= \Phi (y-x)  & auf  \Omega \end{cases} \)</span><br>
+                    透過 \(G(x,y)\) 可以給出上述邊界條件的解為:<br><br>
+                    <span style="color:aliceblue; font-size: 23px;display: flex; justify-content: center;">\(\int_{\partial \Omega }^{}g(y)\frac{\partial G}{\partial \nu }(x,y)d\sigma (y)+\int_{\Omega}^{}f(y)G(x,y)dy\)</span><br>
+                    其中 \(\sigma \) 為表示 \(\partial \Omega\) 的曲面測度。
+                </p>
+            </div>
+            <p>&nbsp;</p>
+            <div class="Epilogue">
+                <h2>vi.Epilogue</h2>
+                <p>1.華羅庚說：「宇宙之大，粒子之微，火箭之速，化工之巧，<br>地球之變，生物之謎，日用之繁，無處不用數學。<br><br><br>
+                    2.羅巴切夫斯基說：「不管數學的任一分支是多麼抽象，總<br>有一天會應用在這實際世界上」。<br><br><br>
+                    3.馮紐曼說：「數學方法滲透並支配著一切自然科學的理論<br>分支。它愈來愈成為衡量科學成就的主要標誌了。」
+                </p>
+                <img src="math2.jpg">
+                <br>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="container_col">
+                        <h4>靜電學參考資料</h4>
+                        <ul>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E9%9B%BB%E8%8D%B7%E5%AF%86%E5%BA%A6">charge density</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E7%9C%9F%E7%A9%BA%E7%94%B5%E5%AE%B9%E7%8E%87">Vacuum permittivity</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E9%9B%BB%E5%8B%A2">electric potential</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E9%AB%98%E6%96%AF%E5%AE%9A%E5%BE%8B">Gauss' law </a></li>
+                        </ul>
+                    </div>
+                    <div class="container_col">
+                        <h4>數學參考資料</h4>
+                        <ul>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E6%B3%8A%E6%9D%BE%E6%96%B9%E7%A8%8B">Poisson's equation</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E8%BE%B9%E7%95%8C%E6%9D%A1%E4%BB%B6">Dirichlet boundary condition</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B8">Green's function </a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E7%AE%97%E5%AD%90">Laplace operator</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B">partial differential equation</a></li>
+                        </ul>
+                    </div>
+                    <div class="container_col">
+                        <h4>其他參考資料</h4>
+                        <ul>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E5%8D%B7%E7%A7%AF">convolution</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%A9%BA%E9%97%B4">Euclidean space</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Open_set">open set</a></li>
+                            <li><a href="https://zh.wikipedia.org/zh-tw/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%96%B9%E7%A8%8B">Laplace equation </a></li>
+                        </ul>
+                    </div>
+                    <div class="container_col">
+                        <h4>follow us</h4>
+                        <div class="social-link">
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/?lang=zh-Hant"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://www.youtube.com/?hl=zh-TW"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <p>學生製作: 張郡中 &nbsp; 系別:應用數學系二年級 &nbsp; 大學:國立嘉義大學 </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

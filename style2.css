@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.main{
+    width: 189.9vh;
+    background-position: center;
+    
+}
+body{
+    background-color: rgb(28, 29, 31);
+}
+
+nav{
+    height: 80px;
+    width: 115.1%;
+    background-color: rgb(54, 54, 59);
+}
+
+label.logo{
+    font-size: 32px;
+    color: blanchedalmond;
+    font-weight: bolder;
+    padding-left: 50px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;  
+    margin-right: 40px;  
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 40px;
+    line-height: 80px;
+}
+
+nav a{
+    color: white;
+    font-size: 23px;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.arc{
+    padding-left: 38%; 
+    padding-top: 30px; 
+}
+
+.arc h1{
+    display: flex;
+    font-size: 32px;
+    color: aliceblue;
+    border: 5px solid rgb(47, 47, 51);
+    width: 450px;
+    height: 50px;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(54, 54, 59);
+    align-content: center;  
+}
+
+.introdution{
+    padding-top: 50px;
+}
+
+img{
+    float: right ; 
+    width:170px;
+    margin: 10px;
+    border: 2px solid #68625b;
+}
+
+.introdution p{
+    float:left;
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 110px;
+}
+
+.introdution h2{
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Description_equation h2{
+    margin-top: 50px;
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Description_equation p{
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 110px;
+    float: left;
+}
+
+.Properties_Equations h2{
+    margin-top: 50px;
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Properties_Equations ol{
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.Properties_Equations ol li{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.Properties_Equations ol li p{
+    color:aliceblue;
+    font-size: 20px;
+}
+
+.electrostatics h2{
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 50px;
+}
+
+.electrostatics p{
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 110px;
+}
+
+.mathematical_expression h2{
+    margin-top: 50px;
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mathematical_expression p{
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 110px;
+}
+
+.Epilogue h2{
+    color: aliceblue;
+    font-size: 35px;
+    border: 5px solid rgb(47, 47, 51);
+    width:300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 50px;
+}
+
+.Epilogue p{
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 110px;
+    float :left;
+}
+
+.Epilogue img{
+    margin-top: 20px;
+    float: right ;
+    width:450px;
+    border: 2px solid #68625b;
+}
+
+
+.footer{
+    background: rgb(54, 54, 59);
+    width: 101.3%;
+    margin-top: 400px;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_col ul{
+    list-style-type: none;
+}
+
+.container_col{
+    width: 20%;
+    padding: 0 15px;
+    padding-left: 53px;
+}
+
+.container_col h4{
+    color: aliceblue;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container_col ul li :not(:list-child){
+    margin-bottom: 10px;
+}
+.container_col ul li{
+    margin-top: 10px;
+}
+
+.container_col ul li a{
+    font-size: 16px;
+    color: aliceblue;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transform:all 0.8s ease-in-out;
+
+}
+
+.container_col ul li a:hover{
+    color: #ff7200;
+    padding-left: 8px;
+}
+
+.social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(28, 29, 31);
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: aliceblue;
+    border-radius: 50%;
+    transform:all 0.8s ease-in-out;
+}
+
+.social-link a:hover{
+    color: #24262b;
+    background-color:#ff7200;
+}
+
+.footer p{
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 450px;
+    font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
